@@ -2,36 +2,68 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    /* border: solid red 3px; */
+    border: solid red 3px;
     align-items: center;
+    height: 800px;
 
 }
 .title {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    /* border: solid blue 3px; */
-}
-.game-board {
-    display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 200px 200px 200px;
-
+    border: solid blue 3px;
 }
 
-.box {
-  background: grey;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   
-}
+
 .reset-button {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     background-color: gold;
     border: solid purple 2px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
+
+  .qtr {
+    background:white;
+    border:solid black 1px;
+    display:inline-block;
+    width:100px;
+    height:100px;
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+    text-align:center;
+  }
+  
+  .qtr:hover {
+    background:rgb(240,240,255) ;
+  }
+  .lbl {
+    line-height:100px;
+    vertical-align:middle;
+    display:inline-block;
+    transform:rotate(-0.125turn);
+    font-size:32px;
+  }
+  #sector1 {
+    border-radius:100% 0 0 0;
+  }
+  #sector2 {
+    border-radius:0 100% 0 0;
+  }
+  #sector3 {
+    border-radius:0 0 100% 0;
+  }
+  #sector4 {
+    border-radius:0 0 0 100%;
+  }
+  #circle {
+    transform: rotate(45deg) translate(120px, 200px);
+    border: solid yellow 3px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 500px;
+    /* align-items: center; */
+  }
