@@ -47,16 +47,16 @@ body {
     transform:rotate(-0.125turn);
     font-size:32px;
   }
-  #sector1 {
+  #slice1 {
     border-radius:100% 0 0 0;
   }
-  #sector2 {
+  #slice2 {
     border-radius:0 100% 0 0;
   }
-  #sector3 {
+  #slice3 {
     border-radius:0 0 100% 0;
   }
-  #sector4 {
+  #slice4 {
     border-radius:0 0 0 100%;
   }
   #circle {
