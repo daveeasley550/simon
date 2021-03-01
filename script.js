@@ -16,45 +16,14 @@ let roundStart = function () {
     })
     flash = function () {
         for (let i = 0; i < computersClicks.length; i++) {
-            // slices[computersClicks[i]].style.background = ""
-            // delay(i)
             setTimeout(() => {
                 slices[computersClicks[i]].style.background = ""
-
             }, i * 1000)
             setTimeout(() => {
                 slices[computersClicks[i]].style.background = "none"
-            }, i * 1000 + 300)
-            // if (computersClicks[i] == 0) {
-            //     slices[0].style = ""
-            //     setTimeout(() => {
-            //         slices[0].style.background = "none"
-            //     }, 500)
-            // } if (computersClicks[i] == 1) {
-            //     slices[1].style = ""
-            //     setTimeout(() => {
-            //         slices[1].style.background = "none"
-            //     }, 500)
-            // } if (computersClicks[i] == 2) {
-            //     slices[2].style = ""
-            //     setTimeout(() => {
-            //         slices[2].style.background = "none"
-            //     }, 500)
-            // } if (computersClicks[i] == 3) {
-            //     slices[3].style = ""
-            //     setTimeout(() => {
-            //         slices[3].style.background = "none"
-            //     }, 500)
-            // }
-
+            }, i * 1000 + 400)
         }
-
     }
-    // let delay = function(i){
-    //     setTimeout(() => {
-    //         slices[computersClicks[i]].style.background = "none"
-    //     }, 1000)
-    // }
     for (let i = 0; i < slices.length; i++) {
         slices[i].style.background = "none"
         slices[i].addEventListener("click", function () {
@@ -63,34 +32,36 @@ let roundStart = function () {
                 slices[i].style.background = "none"
                 checkLoser()
             }, 500)
-
+            
             playersClicks = i
-
+            
         })
-
     }
-    let computersTurn = function (fakearry) {
+    let computersTurn = function () {
         randomClick = qtrs[Math.floor(Math.random() * qtrs.length)]
-        computersClicks = [...computersClicks, randomClick]
+        computersClicks.push(randomClick)
         console.log(computersClicks)
+        console.log(randomClick)
         flash()
     }
     computersTurn()
-
 
     let checkLoser = function () {
         console.log(playersClicks)
         let fake = computersClicks.shift()
         if (fake == playersClicks) {
+            console.log(fakearry)
             fakearry.push(fake)
             if (computersClicks.length == 0) {
-                computersClicks = [...computersClicks, ...fakearry]
-                computersTurn(fakearry)
-
+                computersClicks = computersClicks.concat(...fakearry)
+                console.log(computersClicks)
+                console.log(fakearry)
+                console.log(computersClicks)
+                fakearry= []
+                computersTurn()
                 console.log("next round")
             }
         } else window.alert("Game over"), resetButton.click()
-
     }
 }
 

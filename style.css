@@ -1,5 +1,5 @@
 body {
-    /* background: url(https://media.giphy.com/media/LmWnCBTOGUmw8/giphy.gif) no-repeat fixed; */
+    background: url(https://thebeautifultruth.org.uk/wp-content/uploads/2019/03/abstract-art-astronomy-1252890-resized-1024x576.jpg)center center no-repeat fixed;
     background-size: cover;
     max-width: 700px;
     overflow: hidden;
@@ -30,7 +30,7 @@ body {
     /* border: solid blue 3px; */
     align-items: center;
     font-size: 50px;
-    color: turquoise;
+    color: rgb(240, 38, 139);
 }
 .start-button {
     display: flex;
@@ -38,19 +38,20 @@ body {
     align-items: center;
     margin: 0 auto;
     /* background-color: green; */
-    background: url(https://media.giphy.com/media/8b29QJQgVwUW4/giphy.gif);
-    color: thistle;
-    border: solid yellow 2px;
+    background: url(https://media.giphy.com/media/8b29QJQgVwUW4/giphy.gif)center center;
+    /* color: thistle; */
+    border: solid rgb(21, 21, 165) 1px;
     align-self: center;
-    width: 100px;
+    width: 200px;
     height: 50px;
     font-size: 30px;
     margin-bottom: 25px;
+   
 }
 .reset-button {
-    background: url(https://media.giphy.com/media/HhTXt43pk1I1W/giphy.gif) center center fixed;
+    background: url(https://media.giphy.com/media/l0Iycd0UkyHOe4qT6/giphy.gif)center center;
     align-items: center;
-    width: 100px;
+    width: 200px;
     height: 50px;
     font-size: 25px;
     display: flex;
@@ -63,7 +64,7 @@ body {
 
   .qtr {
     background:white;
-    border:solid black 1px;
+    border:solid gold 2px;
     display:inline-block;
     width:150px;
     height:150px;
@@ -75,13 +76,13 @@ body {
   /* .qtr:hover {
     background:rgb(240,240,255) ;
   } */
-  .lbl {
+  /* .lbl {
     line-height:150px;
     vertical-align:middle;
     display:inline-block;
     transform:rotate(-0.125turn);
     font-size:32px;
-  }
+  } */
   .slice1 {
     border-radius:100% 0 0 0;
     background: red;
