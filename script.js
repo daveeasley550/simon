@@ -2,6 +2,12 @@ let slices = document.querySelectorAll(".qtr")
 let playersClicks = 0
 let computersClicks = []
 let qtrs = [0, 1, 2, 3]
+const sounds = {
+    slice1: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+    slice2: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
+    slice3: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
+    slice4: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
+  };
 const resetButton = document.querySelector(".reset-button")
 let fakearry = []
 let start = document.querySelector(".start-button")
